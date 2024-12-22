@@ -8,14 +8,14 @@ import './App.css';
 
 function App() {
   return (
-    <>
+    <div id="main-container">
       <Home />
       <Navbar />
       <About />
       <Projects />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 
