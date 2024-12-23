@@ -1,6 +1,6 @@
 
 
-function Contact() {
+const Contact: React.FC = () => {
     return (
         <p></p>
     );

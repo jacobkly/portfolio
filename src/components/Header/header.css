@@ -1,0 +1,58 @@
+#header-container {
+    font-size: 3.25rem;
+    margin: 5rem 0;
+    position: relative;
+    display: inline-block;
+}
+
+#header-text {
+    z-index: 100;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+#underline {
+    position: absolute;
+    top: 42px;
+    width: 90%;
+    height: 24%;
+    background-color: #1DB954;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+    #header-container {
+        font-size: 2.7rem;
+    }
+
+    #underline {
+        top: 34px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header-container {
+        font-size: 2.2rem;
+    }
+
+    #underline {
+        top: 27px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #header-container {
+        font-size: 1.7rem;
+    }
+
+    #underline {
+        top: 21px;
+    }
+}
+
+.barlow-semibold {
+    font-family: "Barlow", serif;
+    font-weight: 600;
+    font-style: normal;
+}

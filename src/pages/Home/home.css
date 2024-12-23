@@ -2,6 +2,7 @@
 #link-container {
     opacity: 0;
     transform: translateY(-50px);
+    transition: all 0.5s ease-in-out;
 }
 
 #home-container {
@@ -10,20 +11,16 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    margin: auto;
+    height: 100%;
+    position: relative;
 }
 
 #name {
     margin-left: 0.75rem;
     color: #1DB954;
-    transition: all ease-in-out;
     display: inline-block;
-}
-
-#name:hover {
-    font-weight: 275;
-    transform: scale(1.05);
-    transform-origin: center;
+    font-weight: 300;
 }
 
 a {
@@ -48,7 +45,7 @@ a {
 
 #line-one {
     font-size: 4rem;
-    animation: dropFadeIn 1s ease-in-out forwards;
+    animation: dropFadeIn 0.8s ease-in-out forwards;
     transition: all 0.5s ease-in-out;
 }
 
@@ -65,8 +62,8 @@ a {
 #line-two {
     font-size: 4rem;
     opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
-    animation-delay: 1s;
+    animation: fadeIn 0.8s ease-in-out forwards;
+    animation-delay: 0.8s;
     transition: all 0.5s ease-in-out;
 }
 
@@ -89,10 +86,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: riseFadeIn 1.6s ease-in-out forwards;
+    animation-delay: 1.6s;
     transition: all 0.5s ease-in-out;
     transform-origin: center;
-    animation: riseFadeIn 1s ease-in-out forwards;
-    animation-delay: 2s;
     font-size: 1.6rem;
 }
 
@@ -128,11 +125,6 @@ a {
         margin: 0.1rem 0.8rem 0.2rem 1rem;
     }
 
-    #name:hover {
-        font-weight: 250;
-        transform: scale(1.03);
-    }
-
     .down-arrow {
         margin-top: 3px;
         width: 20px;
@@ -155,11 +147,6 @@ a {
 
     #link-text {
         margin: 0.1rem 0.7rem 0.2rem 0.9rem;
-    }
-
-    #name:hover {
-        font-weight: 240;
-        transform: scale(1.02);
     }
 
     .down-arrow {
@@ -185,11 +172,6 @@ a {
 
     #link-text {
         margin: 0.1rem 0.55rem 0.2rem 0.8rem;
-    }
-
-    #name:hover {
-        font-weight: 230;
-        transform: scale(1.01);
     }
 
     .down-arrow {

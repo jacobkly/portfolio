@@ -1,6 +1,6 @@
 
 
-function Footer() {
+const Footer: React.FC = () => {
     return (
         <p></p>
     );

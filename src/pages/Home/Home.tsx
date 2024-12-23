@@ -1,6 +1,6 @@
 import './home.css';
 
-function Home() {
+const Home: React.FC = () => {
     return (
         <div id="home-container">
             <p id="line-one" className="barlow-extralight">Hello, I'm
