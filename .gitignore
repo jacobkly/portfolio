@@ -62,3 +62,10 @@ coverage/
 # Temp files
 tmp/
 temp/
+
+# Ignoring specific TypeScript configuration files (not needed for the remote repo)
+tsconfig.app.json
+tsconfig.node.json
+
+# Ignore ESLint config (not needed for this project)
+eslint.config.js

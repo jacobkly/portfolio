@@ -18,7 +18,7 @@ const About: React.FC = () => {
                         <img id="picture" src="/images/profile-pic.jpg" alt="Jacob's Picture" />
                         <div id="text-container">
                             <p className="barlow-light">
-                                As a senior at the University of Washington Tacoma, majoring in Computer
+                                As a senior at the University of Washington, majoring in Computer
                                 Science and Systems with a 3.91 GPA, I’m passionate about building software
                                 that makes a difference. As a full-stack developer, I enjoy creating secure,
                                 scalable systems and writing efficient code to solve challenging problems. I’ve
