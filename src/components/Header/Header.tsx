@@ -25,7 +25,7 @@ const Header: React.FC<Props> = ({ section, left }) => {
     useEffect(() => {
         let updatedLeft: number = left;
 
-        // small to largest to cover all window width sizes
+        // smallest to largest to cover all window width sizes
         if (windowWidth <= 480) {
             updatedLeft = left - 16;
         } else if (windowWidth <= 768) {

@@ -1,8 +1,8 @@
-
+import Header from '../components/Header/Header';
 
 const Projects: React.FC = () => {
     return (
-        <p></p>
+        <div id="header"><Header section="Projects" left={30} /></div>
     );
 }
 

@@ -1,8 +1,8 @@
-
+import Header from '../components/Header/Header';
 
 const Contact: React.FC = () => {
     return (
-        <p></p>
+        <div id="header"><Header section="Contact" left={31} /></div>
     );
 }
 
