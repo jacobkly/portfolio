@@ -1,0 +1,41 @@
+{
+    "projects": [
+        {
+            "title": "Christmas Trivia Maze",
+            "subtitle": "8-Bit Video Game",
+            "description": "Graphical user interface built with Java, Swing, and SQLite with Model-View-Controller, Test-Driven Development, and Singleton design patterns.",
+            "imagePath": "/images/christmas-trivia-maze.png",
+            "repoLink": "https://github.com/jacobkly/christmas-trivia-maze"
+        },
+        {
+            "title": "JazzList",
+            "subtitle": "Jazz Artists Website",
+            "description": "Informational website built with JavaScript, HTML, and CSS.",
+            "imagePath": "/images/jazzlist.png",
+            "liveAppLink": "jacobkly.github.io/jazzlist/",
+            "repoLink": "https://github.com/jacobkly/jazzlist"
+        },
+        {
+            "title": "Christmas Trivia Maze",
+            "subtitle": "8-Bit Video Game",
+            "description": "Graphical user interface built with Java, Swing, and SQLite with Model-View-Controller, Test-Driven Development, and Singleton design patterns.",
+            "imagePath": "/images/christmas-trivia-maze.png",
+            "repoLink": "https://github.com/jacobkly/christmas-trivia-maze"
+        },
+        {
+            "title": "JazzList",
+            "subtitle": "Jazz Artists Website",
+            "description": "Informational website built with JavaScript, HTML, and CSS.",
+            "imagePath": "/images/jazzlist.png",
+            "liveAppLink": "jacobkly.github.io/jazzlist/",
+            "repoLink": "https://github.com/jacobkly/jazzlist"
+        },
+        {
+            "title": "Christmas Trivia Maze",
+            "subtitle": "8-Bit Video Game",
+            "description": "Graphical user interface built with Java, Swing, and SQLite with Model-View-Controller, Test-Driven Development, and Singleton design patterns.",
+            "imagePath": "/images/christmas-trivia-maze.png",
+            "repoLink": "https://github.com/jacobkly/christmas-trivia-maze"
+        }
+    ]
+}

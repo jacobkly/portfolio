@@ -1,0 +1,365 @@
+.project-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.project-left {
+    flex-direction: row;
+}
+
+.project-right {
+    flex-direction: row-reverse;
+}
+
+.project-backdrop {
+    position: absolute;
+    width: 960px;
+    height: 600px;
+    padding: 10%;
+    background-color: #00ff8062;
+    z-index: 0;
+}
+
+.content-container {
+    position: relative;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 3%;
+    z-index: 1;
+}
+
+.project-image {
+    width: 850px;
+    height: auto;
+}
+
+.text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    margin-top: 20px;
+}
+
+.project-right .text-container {
+    text-align: right;
+}
+
+.text-container h1 {
+    font-size: 2.75rem;
+}
+
+.text-container h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.text-container p {
+    font-size: 1.25rem;
+    margin-bottom: 35px;
+}
+
+.actions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.project-left .actions-container {
+    align-items: flex-start;
+}
+
+.project-right .actions-container {
+    align-items: flex-end;
+}
+
+.actions-container a {
+    position: relative;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 3px solid #1DB954;
+    overflow: hidden;
+}
+
+.actions-container a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1DB954;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.actions-container a:hover {
+    color: #000000;
+}
+
+.actions-container a:hover::before {
+    transform: scaleY(1);
+}
+
+.action-link {
+    width: fit-content;
+    display: inline-block;
+    font-size: 1.25rem;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+    letter-spacing: 2px;
+}
+
+.project-left .action-link {
+    text-align: left;
+}
+
+.project-right .action-link {
+    text-align: right;
+}
+
+@media screen and (max-width: 1500px) {
+    .project-container {
+        width: 100%;
+    }
+
+    .project-backdrop {
+        width: 800px;
+        height: 500px;
+    }
+
+    .project-image {
+        width: 700px;
+    }
+
+    .text-container {
+        margin-top: 13px;
+    }
+
+    .text-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .text-container h2 {
+        font-size: 1.75rem;
+    }
+
+    .text-container p {
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .content-container {
+        width: 100%;
+    }
+
+    .project-backdrop {
+        width: 585px;
+        height: 380px;
+    }
+
+    .project-image {
+        width: 525px;
+    }
+
+    .text-container {
+        margin-top: 10px;
+    }
+
+    .text-container h1 {
+        font-size: 1.9rem;
+    }
+
+    .text-container h2 {
+        font-size: 1.45rem;
+        margin-bottom: 15px;
+    }
+
+    .text-container p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .actions-container {
+        gap: 5px;
+    }
+
+    .actions-container a {
+        padding: 0.35rem 0.5rem
+    }
+
+    .action-link {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-container {
+        width: 100%;
+    }
+
+    .project-backdrop {
+        width: 455px;
+        height: 290px;
+    }
+
+    .project-image {
+        width: 400px;
+    }
+
+    .text-container {
+        margin-top: 5px;
+    }
+
+    .text-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-container h2 {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+
+    .text-container p {
+        font-size: 0.8rem;
+        margin-bottom: 8px;
+    }
+
+    .actions-container {
+        gap: 4px;
+    }
+
+    .actions-container a {
+        padding: 0.25rem 0.4rem
+    }
+
+    .action-link {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project-backdrop {
+        width: 370px;
+        height: 250px;
+    }
+
+    .project-image {
+        width: 325px;
+    }
+
+    .text-container {
+        padding: 8px;
+        margin-top: 0px;
+        background-color: #0000008c;
+        border-radius: 2%;
+        z-index: 1;
+    }
+
+    .project-left .text-container {
+        margin-left: -70px;
+    }
+
+    .project-right .text-container {
+        margin-right: -70px;
+    }
+
+    .text-container h1 {
+        font-size: 1.1rem;
+    }
+
+    .text-container h2 {
+        font-size: 0.85rem;
+        margin-bottom: 8px;
+    }
+
+    .text-container p {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+
+    .actions-container {
+        gap: 2px;
+    }
+
+    .actions-container a {
+        padding: 0.1rem 0.2rem;
+        border-bottom: 2px solid #1DB954;
+    }
+
+    .action-link {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .project-backdrop {
+        width: 280px;
+        height: 180px;
+    }
+
+    .content-container {
+        gap: -50px;
+    }
+
+    .project-image {
+        width: 250px;
+    }
+
+    .project-left .project-right .text-container {
+        padding: 4px;
+        border-radius: 3%;
+        position: relative;
+    }
+
+    .project-left .text-container {
+        margin-left: -70px;
+    }
+
+    .project-right .text-container {
+        margin-right: -70px;
+    }
+
+    .text-container h1 {
+        font-size: 0.9rem;
+    }
+
+    .text-container h2 {
+        font-size: 0.8rem;
+    }
+
+    .text-container p {
+        font-size: 0.7rem;
+        margin-bottom: 4px;
+    }
+
+    .action-link {
+        font-size: 0.6rem;
+    }
+}
+
+.barlow-light {
+    font-family: "Barlow", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.barlow-regular {
+    font-family: "Barlow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.barlow-medium {
+    font-family: "Barlow", serif;
+    font-weight: 500;
+    font-style: normal;
+}
