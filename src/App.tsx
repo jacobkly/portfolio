@@ -1,7 +1,7 @@
 import Home from './pages/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import About from './pages/About/About';
-import Projects from './pages/Projects';
+import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import './App.css';

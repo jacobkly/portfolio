@@ -1,13 +1,13 @@
-import Header from '../components/Header/Header';
-import ProjectCard from '../components/ProjectCard/ProjectCard';
-import projectContents from '../assets/data/projectContents.json';
+import Header from '../../components/Header/Header';
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
+import projectContents from '../../assets/data/projectContents.json';
 import './projects.css';
 
 const Projects: React.FC = () => {
     const count: number = projectContents.projects.length;
 
     return (
-        <>
+        <div id="projects">
             <div id="projects-header">
                 <Header section="Projects" left={29} />
             </div>
@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
                 })}
             </div>
             <div id="spacer" />
-        </>
+        </div>
     );
 }
 

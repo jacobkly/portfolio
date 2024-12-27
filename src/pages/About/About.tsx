@@ -10,7 +10,7 @@ const About: React.FC = () => {
     });
 
     return (
-        <>
+        <div id="about">
             <div id="header"><Header section="About" left={34} /></div>
             <div ref={ref} className={`animated-section ${inView ? "visible" : ''}`}>
                 <div id="about-container">
@@ -49,7 +49,7 @@ const About: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
