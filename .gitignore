@@ -69,3 +69,6 @@ tsconfig.node.json
 
 # Ignore ESLint config (not needed for this project)
 eslint.config.js
+
+# Sensitive information
+.env
