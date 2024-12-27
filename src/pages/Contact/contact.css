@@ -1,0 +1,157 @@
+#contact-container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 5rem;
+}
+
+#contact-intro {
+    color: #E0E0E0;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+#contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#name-container,
+#email-container,
+#message-container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 5px;
+    background-color: #2C2C2C;
+    color: #E0E0E0;
+    border: 1px solid #2C2C2C;
+    font-size: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #888888;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1DB954;
+}
+
+textarea {
+    resize: none;
+    overflow-y: auto;
+    min-height: 150px;
+}
+
+#bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 3px;
+}
+
+.email-link {
+    color: #1DB954;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.email-icon {
+    width: 38px;
+    height: auto;
+    margin: 0 5px;
+}
+
+.email-text {
+    font-size: 1rem;
+    color: #E0E0E0;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 15px;
+    background-color: #1DB954;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+button:hover {
+    transform: scale(1.04);
+    color: #000000;
+}
+
+@media screen and (max-width: 1024px) {
+    #bottom-container {
+        gap: 10px;
+    }
+
+    .email-text {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #contact-container {
+        width: 400px;
+        margin-bottom: 4rem;
+    }
+
+    .email-text {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #contact-container {
+        width: 300px;
+    }
+
+    #bottom-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .email-text {
+        font-size: 0.8rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+}
