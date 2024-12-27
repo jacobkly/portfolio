@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
             <div id="header"><Header section="Contact" left={31} /></div>
             <div id="contact-container">
                 <div id="contact-intro">
-                    <p className="barlow-light">Have a question or request for me?</p>
+                    <p className="barlow-light">Have a question or want to work together?</p>
                     <p className="barlow-light">Contact me with the form below or via email icon!</p>
                 </div>
                 <form id="contact-form" onSubmit={handleSubmit}>
