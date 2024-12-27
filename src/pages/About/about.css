@@ -151,13 +151,26 @@
 }
 
 @media screen and (max-width: 480px) {
+    .animated-section #bio-container {
+        transform: translateX(-80px);
+    }
+
     #bio-container {
         width: 75%;
+    }
+
+    #text-container {
+        font-size: 0.85rem;
     }
 
     #picture {
         width: 80%;
     }
+
+    .animated-section #skills-container {
+        transform: translateX(80px);
+    }
+
 }
 
 .barlow-light {

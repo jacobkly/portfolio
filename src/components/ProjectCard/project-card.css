@@ -3,6 +3,9 @@
     display: flex;
     align-items: center;
     position: relative;
+    opacity: 0;
+    transform: translateX(200px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
 }
 
 .project-left {
@@ -11,6 +14,12 @@
 
 .project-right {
     flex-direction: row-reverse;
+    transform: translateX(-200px);
+}
+
+.project-container.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .project-backdrop {
@@ -20,6 +29,7 @@
     padding: 10%;
     background-color: #00ff8062;
     z-index: 0;
+    transition: width 1s ease, height 1s ease;
 }
 
 .content-container {
@@ -29,11 +39,14 @@
     justify-content: flex-start;
     gap: 3%;
     z-index: 1;
+    transition: width 1s ease, gap 1s ease;
 }
 
 .project-image {
     width: 850px;
     height: auto;
+    max-width: 100%;
+    transition: width 1s ease;
 }
 
 .text-container {
@@ -43,6 +56,7 @@
     text-align: left;
     color: white;
     margin-top: 20px;
+    transition: transform 1s ease, color 0.5s ease;
 }
 
 .project-right .text-container {
@@ -51,16 +65,19 @@
 
 .text-container h1 {
     font-size: 2.75rem;
+    transition: font-size 0.5s ease;
 }
 
 .text-container h2 {
     font-size: 2rem;
     margin-bottom: 25px;
+    transition: font-size 0.5s ease;
 }
 
 .text-container p {
     font-size: 1.25rem;
     margin-bottom: 35px;
+    transition: font-size 0.5s ease;
 }
 
 .actions-container {
@@ -68,6 +85,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 15px;
+    transition: gap 0.5s ease;
 }
 
 .project-left .actions-container {
@@ -83,28 +101,11 @@
     padding: 0.5rem 0.75rem;
     border-bottom: 3px solid #1DB954;
     overflow: hidden;
-}
-
-.actions-container a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #1DB954;
-    transform: scaleY(0);
-    transform-origin: bottom;
-    transition: transform 0.3s ease-in-out;
-    z-index: -1;
+    transition: color 0.3s ease, padding 0.3s ease;
 }
 
 .actions-container a:hover {
     color: #000000;
-}
-
-.actions-container a:hover::before {
-    transform: scaleY(1);
 }
 
 .action-link {
@@ -115,14 +116,6 @@
     position: relative;
     transition: all 0.3s ease;
     letter-spacing: 2px;
-}
-
-.project-left .action-link {
-    text-align: left;
-}
-
-.project-right .action-link {
-    text-align: right;
 }
 
 @media screen and (max-width: 1500px) {
@@ -157,6 +150,14 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .project-container {
+        transform: translateX(150px);
+    }
+
+    .project-right {
+        transform: translateX(-150px);
+    }
+
     .content-container {
         width: 100%;
     }
@@ -204,6 +205,11 @@
 @media screen and (max-width: 768px) {
     .project-container {
         width: 100%;
+        transform: translateX(100px);
+    }
+
+    .project-right {
+        transform: translateX(-100px);
     }
 
     .project-backdrop {

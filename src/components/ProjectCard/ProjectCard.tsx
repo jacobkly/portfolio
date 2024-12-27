@@ -1,3 +1,4 @@
+import { useInView } from 'react-intersection-observer';
 import './project-card.css';
 
 interface Props {
@@ -13,8 +14,17 @@ interface Props {
 const ProjectCard: React.FC<Props> = ({ title, subtitle, description, imagePath, alignment, liveAppLink, repoLink }) => {
     const isLeft: boolean = alignment === "left";
 
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.5,
+    });
+
     return (
-        <div className={`project-container ${isLeft ? "project-left" : "project-right"}`}>
+        <div
+            ref={ref}
+            className={
+                `project-container ${isLeft ? "project-left" : "project-right"} ${inView ? "visible" : ''}`
+            }>
             <div className="project-backdrop" />
             <div className="content-container">
                 {isLeft ? (
