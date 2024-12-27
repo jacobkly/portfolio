@@ -3,14 +3,14 @@
         {
             "title": "moviewatchers",
             "subtitle": "Video Streaming App",
-            "description": "Proof-of-concept app built with React, TypeScript, and Go, allowing users to stream locally stored movies and shows with high-quality playback.",
+            "description": "Proof-of-concept app built with React, TypeScript, and Golang, allowing users to stream locally stored movies and shows with high-quality playback.",
             "imagePath": "/images/moviewatchers.png",
             "repoLink": "https://github.com/jacobkly/moviewatchers"
         },
         {
             "title": "Universal Wealth",
             "subtitle": "Financial Tracking App",
-            "description": "Full-stack app built with React, Node.js, and PostgreSQL for monitoring stock prices and trends in real-time.",
+            "description": "Full-stack app built with React, Node.js, Express.js, and PostgreSQL for monitoring stock prices and trends in real-time.",
             "imagePath": "/images/universal-wealth.png",
             "repoLink": "https://github.com/UWTechStartUpClub/fall-2024-project"
         },
