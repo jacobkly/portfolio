@@ -18,14 +18,15 @@ const About: React.FC = () => {
                         <img id="picture" src="/images/profile-pic.jpg" alt="Jacob's Picture" />
                         <div id="text-container">
                             <p className="barlow-light">
-                                As a senior at the University of Washington, majoring in Computer
-                                Science and Systems with a 3.91 GPA, I’m passionate about building software
-                                that makes a difference. Being a full-stack developer, I enjoy creating secure,
-                                scalable systems and writing efficient code to solve challenging problems. I’ve
-                                led teams on exciting projects, developed tools to simplify daily tasks, and
-                                continuously seek new ways to learn and grow. Outside of coding, I love playing
-                                jazz saxophone and guitar, spending time wih family and friends, and exploring
-                                creative solutions through programming.
+                                I’m a student at the University of Washington with a deep passion for
+                                becoming a full-stack developer. I’m excited by the challenge of creating
+                                software that solves real-world problems, and I love working with
+                                technologies like TypeScript, React, and Golang to build scalable,
+                                efficient systems. My journey as a developer is fueled by a constant
+                                drive to learn and grow, whether I’m tackling complex projects or exploring
+                                new tools and frameworks. When I’m not coding, I enjoy playing guitar and jazz
+                                saxophone, where creativity and problem-solving come to life in
+                                different ways.
                             </p>
                         </div>
                     </div>
