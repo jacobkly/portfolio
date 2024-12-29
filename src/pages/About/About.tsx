@@ -32,20 +32,20 @@ const About: React.FC = () => {
                     </div>
                     <div id="skills-container">
                         <div className="skill-row odd-row">
-                            <Skill name="JAVA" imagePath="/images/java.png" />
-                            <Skill name="GOLANG" imagePath="/images/golang.png" />
-                            <Skill name="PYTHON" imagePath="/images/python.png" />
+                            <Skill name="JAVA" imagePath="/images/java.png" webLink="https://www.java.com/en/" />
+                            <Skill name="GOLANG" imagePath="/images/golang.png" webLink="https://go.dev/" />
+                            <Skill name="PYTHON" imagePath="/images/python.png" webLink="https://www.python.org/" />
                         </div>
                         <div className="skill-row even-row">
-                            <Skill name="NODE.JS" imagePath="/images/nodejs.svg" />
-                            <Skill name="EXPRESS.JS" imagePath="/images/expressjs.png" />
-                            <Skill name="POSTGRESQL" imagePath="/images/postgresql.png" />
-                            <Skill name="GIT" imagePath="/images/git.png" />
+                            <Skill name="NODE.JS" imagePath="/images/nodejs.svg" webLink="https://nodejs.org/en" />
+                            <Skill name="EXPRESS.JS" imagePath="/images/expressjs.png" webLink="https://expressjs.com/" />
+                            <Skill name="POSTGRESQL" imagePath="/images/postgresql.png" webLink="https://www.postgresql.org/" />
+                            <Skill name="GIT" imagePath="/images/git.png" webLink="https://git-scm.com/" />
                         </div>
                         <div className="skill-row odd-row">
-                            <Skill name="REACT" imagePath="/images/react.png" />
-                            <Skill name="TYPESCRIPT" imagePath="/images/typescript.png" />
-                            <Skill name="CSS" imagePath="/images/css.png" />
+                            <Skill name="REACT" imagePath="/images/react.png" webLink="https://react.dev/" />
+                            <Skill name="TYPESCRIPT" imagePath="/images/typescript.png" webLink="https://www.typescriptlang.org/" />
+                            <Skill name="CSS" imagePath="/images/css.png" webLink="https://www.w3.org/Style/CSS/Overview.en.html" />
                         </div>
                     </div>
                 </div>
